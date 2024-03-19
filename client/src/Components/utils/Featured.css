@@ -1,0 +1,16 @@
+.main-featured{
+    background-color: #7fffd4;
+    height: 40vh;
+    margin-bottom: 20px;
+    width:90% ;
+    margin-left: 60px;
+  
+   
+}
+
+.boxRow{
+    background-color: blueviolet;
+    width: 320px;
+    margin-left: 40px;
+  
+}
