@@ -1,60 +1,73 @@
-import React from 'react'
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Button from 'react-bootstrap/Button';
-// import Col from 'react-bootstrap/Col';
+import Button from '@mui/material/Button';
 import Form from 'react-bootstrap/Form';
-// import Row from 'react-bootstrap/Row';
-const logo = require('./utils1/Logo.png')
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import SearchIcon from '@mui/icons-material/Search';
+
+const logo = require('./utils1/Logo.png');
 
 const HOME = () => {
+  const [value, setValue] = React.useState('Inventory');
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <div style={{display:'inline-flex', marginBottom:'90px'}}>
-
-
-<Navbar style={{ backgroundColor: '#0d47a1', color: 'white' , height:'8vh'}} variant="dark"  fixed='top'>
-      <Container>
-        <Navbar.Brand style={{marginTop:'6px'}} href="#home"><img
+    <div style={{ display: 'inline-flex', marginBottom: '90px' }}>
+      <Navbar style={{ backgroundColor: '#0d47a1', color: 'white', height: '8vh' }} variant="dark" fixed='top'>
+         
+         <Container>
+                  <Navbar.Brand style={{ marginTop: '6px' }} href="#home">
+            <img
               alt=""
               src={logo}
               width="160"
               height="150"
               className="d-inline-block align-top"
-            /></Navbar.Brand>
-        
+            />
+             </Navbar.Brand>
+          <Container>
+            <Box sx={{ width: '100%' }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                textColor="secondary"
+                indicatorColor="secondary"
+                aria-label="secondary tabs example"
+              >
+                <Tab
+                  value="Inventory"
+                  label="Inventory"
+                  sx={{ color: 'white' }} // Change color here
+                />
+                <Tab
+                  value="Home"
+                  label="Home"
+                  sx={{ color: 'white' }} // Change color here
+                />
+              </Tabs>
+            </Box>
 
 
-        <Container>
-       <Dropdown >
-       <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
-          More
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1" active>
-            Action
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-        </Dropdown.Menu>
-       </Dropdown>
-      </Container>
-           
-     
-      </Container>
-  
+          </Container>
 
-
-            <Form style={{display:'inline-flex', marginRight:'3px'}}>
+          <Box style={{ display: 'inline-flex', marginRight: '3px' }} component="form" sx={{ '& > :not(style)': { m: 1, width: '25ch' } }} noValidate autoComplete="off">
             <Form.Control type="text" placeholder="Search" className="mr-sm-4" />
-            <Button>Search</Button>
-          </Form>
-    </Navbar>
+            <Button
+            startIcon={<SearchIcon />}
+             style={{backgroundColor:'gray', color:'white'}} size="large"  ></Button>
+          </Box>
 
+
+        </Container>
+      </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default HOME
+export default HOME;

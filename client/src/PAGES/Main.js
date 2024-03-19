@@ -3,14 +3,23 @@ import Container from 'react-bootstrap/esm/Container'
 import './utils1/Main.css'
 import Featured from '../Components/Featured'
 import Budget from '../Components/Budget'
+import Button from '@mui/material/Button';
 const Main = () => {
   return (
     <div style={{ width:'90%', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', marginLeft:'5%' ,}}>
         
-        <Container className='main' >
-           <div className='Hero'>
-            <p style={{textAlign:'center', color:'white', fontSize:'40px', textShadow:'1px 1px 1px 1px'}} >Americas #1 peer to peer car Market</p>
-           </div>
+        <Container  className='main' >
+                  <Container fluid className='Hero'>
+           
+             <h1 style={{marginTop:'25%'}} >Explore Our Used Car Inventory</h1>
+             <p style={{textAlign:'center'}} >Find the perfect car for your needs.</p>
+             <Button     style={{backgroundColor:'gray', color:'white', marginLeft:'30%'}} size="large"  >sIGN UP/LearnMore</Button>
+           
+      
+                 </Container>
+           <Container fluid className='Hero-2'>
+           
+           </Container>
         </Container>
     <div  className='Value'>
   

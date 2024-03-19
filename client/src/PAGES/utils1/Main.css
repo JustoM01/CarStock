@@ -1,21 +1,29 @@
 .main{
     height: 50vh;
-    background-image: url('./Car1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   
+   
  
     
 }
 
 .Hero{
    
-    width: 800px;
-
-    margin: 0 auto;
-    height: 200px;
-    position: relative;
-    top :30%;
+    float: left;
+      height: 50vh;
+      width: 50%;
+      
+    
+}
+.Hero-2{
+   
+    float: right;
+      background-color: bisque;
+      height: 50vh;
+      width: 50%;
+      background-image: url('./HERO.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      
     
 }
 

@@ -5,7 +5,7 @@ import Main from './PAGES/Main';
 import Footer from './Components/Footer';
 function App() {
   return (
-    <div className="App">
+    <div style={{backgroundColor:'whitesmoke'}} className="App">
 <HOME></HOME>
 <Main></Main>
 <Footer></Footer>
