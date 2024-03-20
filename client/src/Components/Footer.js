@@ -9,7 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const logo = require('../PAGES/utils1/Logo.png')
 const Footer = () => {
   return (
-   <Container  fluid style={{ backgroundColor:'whitesmoke',  width:'100%', marginTop:'20PX' }} >
+   <Container  fluid style={{   width:'100%',marginTop:'40px' }} >
     <div className='logo'>  <img src={logo} alt='logo'></img></div>
  
     <p style={{textAlign:'center'}} >

@@ -1,0 +1,37 @@
+.main-filter{
+   
+    background-color: red;
+    height: 300px;
+  
+
+ 
+}
+
+.search-form{
+    margin-top: 10px;
+}
+
+.form{
+    background-color: blue;
+    width: 40%;
+    float: left;
+    margin-top: 15px;
+     
+}
+
+
+
+.input-container {
+
+  }
+  
+
+  .signup{
+    background-color: chartreuse;
+    width: 60%;
+    float: right;
+    height: 100%;
+  
+ 
+  
+  }

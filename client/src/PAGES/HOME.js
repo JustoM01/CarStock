@@ -18,8 +18,8 @@ const HOME = () => {
   };
 
   return (
-    <div style={{ display: 'inline-flex', marginBottom: '90px' }}>
-      <Navbar style={{ backgroundColor: '#0d47a1', color: 'white', height: '8vh' }} variant="dark" fixed='top'>
+    <div style={{ display: 'inline-flex', marginBottom: '120px' }}>
+      <Navbar style={{ backgroundColor: 'gray', color: 'white',height:'10%' ,borderRadius:'2%', marginBottom:'30px'}} variant="dark" fixed='top'>
          
          <Container>
                   <Navbar.Brand style={{ marginTop: '6px' }} href="#home">

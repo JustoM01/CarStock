@@ -1,6 +1,10 @@
 .main-Budget{
-    background-color: black;
-    height: 30vh;
+    height: 300px;
     width: 90%;
     margin-left: 60px;
+    margin-top: 60px;
+}
+
+.slider{
+    color: purple;
 }
